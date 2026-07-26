@@ -37,10 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const trackingNumber = trackingInput.value.trim();
             
             if (trackingNumber) {
-                // The prompt specified: incorporate tracking links https://keralaxpress.com/track to track deliveries
-                // We'll redirect them there. If it accepts a query param like ?id=123, we can append it.
-                // Assuming it's a generic page or accepts a tracking number. 
-                window.location.href = `https://keralaxpress.com/track?id=${encodeURIComponent(trackingNumber)}`;
+                // Redirect to the new erp tracking link
+                window.location.href = `https://erp.keralaxpress.com/track?id=${encodeURIComponent(trackingNumber)}`;
             }
         });
     }
