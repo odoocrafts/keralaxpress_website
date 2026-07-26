@@ -6,11 +6,11 @@
     --secondary-light: #ff1a1a;
     
     /* Neutrals */
-    --bg-color: #ffffff;
-    --bg-light: #f8fafc;
-    --text-main: #0f172a;
-    --text-muted: #64748b;
-    --border-color: #e2e8f0;
+    --bg-color: #0f172a;
+    --bg-light: #1e293b;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --border-color: rgba(255, 255, 255, 0.1);
     
     /* Typography */
     --font-main: 'Outfit', sans-serif;
@@ -153,7 +153,7 @@ ul {
     width: 100%;
     z-index: 100;
     padding: 1rem 0;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(15, 23, 42, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-color);
@@ -175,6 +175,9 @@ ul {
     height: 48px;
     width: auto;
     object-fit: contain;
+    background: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius-md);
 }
 
 .nav-links {
@@ -208,7 +211,7 @@ ul {
     right: -100%;
     width: 100%;
     height: 100vh;
-    background: white;
+    background: var(--bg-color);
     z-index: 1000;
     display: flex;
     flex-direction: column;
@@ -310,10 +313,10 @@ ul {
 }
 
 .glass-card {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: var(--radius-xl);
     padding: 2rem;
     box-shadow: var(--shadow-lg);
@@ -326,7 +329,7 @@ ul {
 
 .tracking-form .input-group {
     display: flex;
-    background: white;
+    background: rgba(255, 255, 255, 0.05);
     border-radius: var(--radius-md);
     border: 1px solid var(--border-color);
     padding: 0.5rem;
@@ -351,6 +354,7 @@ ul {
     width: 100%;
     border: none;
     outline: none;
+    color: var(--text-main);
     font-size: 0.875rem;
     font-family: inherit;
     background: transparent;
@@ -368,7 +372,8 @@ ul {
 
 .floating-card {
     position: absolute;
-    background: white;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     padding: 1.5rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
@@ -452,12 +457,12 @@ ul {
 }
 
 .feature-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.03);
     padding: 2.5rem 2rem;
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
-    border: 1px solid transparent;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .feature-card:hover {
@@ -500,7 +505,7 @@ ul {
 }
 
 .cta-container.dark {
-    background: linear-gradient(135deg, var(--text-main), #1e293b);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white;
     display: flex;
     justify-content: space-between;
@@ -554,7 +559,7 @@ ul {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
