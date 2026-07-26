@@ -2,6 +2,7 @@
     /* Colors derived from Logo (Blue & Red) with modern variations */
     --primary: #003399; /* Deep Blue from logo */
     --primary-light: #1a53ff;
+    --primary-bright: #60a5fa; /* Lighter blue for readability on dark backgrounds */
     --secondary: #cc0000; /* Vibrant Red from logo */
     --secondary-light: #ff1a1a;
     
@@ -82,7 +83,7 @@ ul {
 }
 
 .text-primary {
-    color: var(--primary);
+    color: var(--primary-bright);
 }
 
 .text-secondary {
@@ -136,13 +137,13 @@ ul {
 
 .btn-outline {
     background-color: transparent;
-    color: var(--primary);
-    border: 2px solid var(--primary);
+    color: var(--primary-bright);
+    border: 2px solid var(--primary-bright);
 }
 
 .btn-outline:hover {
-    background-color: var(--primary);
-    color: white;
+    background-color: var(--primary-bright);
+    color: var(--bg-color);
 }
 
 /* Navbar */
@@ -285,8 +286,8 @@ ul {
 .badge {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: rgba(0, 51, 153, 0.1);
-    color: var(--primary);
+    background: rgba(96, 165, 250, 0.15);
+    color: var(--primary-bright);
     border-radius: 2rem;
     font-size: 0.875rem;
     font-weight: 600;
@@ -474,8 +475,8 @@ ul {
 .feature-icon {
     width: 64px;
     height: 64px;
-    background: rgba(0, 51, 153, 0.05);
-    color: var(--primary);
+    background: rgba(96, 165, 250, 0.1);
+    color: var(--primary-bright);
     border-radius: var(--radius-lg);
     display: flex;
     align-items: center;
@@ -486,8 +487,8 @@ ul {
 }
 
 .feature-card:hover .feature-icon {
-    background: var(--primary);
-    color: white;
+    background: var(--primary-bright);
+    color: var(--bg-color);
 }
 
 .feature-card h3 {
